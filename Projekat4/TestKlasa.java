@@ -35,9 +35,7 @@ public class TestKlasa {
         }
 
         System.out.println("\nPretraga po tipu (\"gob\"):");
-        ArrayList<Enemy> type = (ArrayList<Enemy>) game.findByType("gob");
-		ArrayList<Enemy> byType = type;
-		ArrayList<Enemy> found = byType;
+        ArrayList<Enemy> found = (ArrayList<Enemy>) game.findByType("gob");
         for (Enemy e : found) {
             System.out.println(" * " + e);
         }
